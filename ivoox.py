@@ -91,7 +91,7 @@ if __name__ == '__main__':
     links = get_download_urls(url_r)
 
     if not rev:
-        links = reversed(links)
+        links = links[::-1]
 
     print("Start Download")
     for i, _url in enumerate(links):
